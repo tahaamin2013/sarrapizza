@@ -10,7 +10,11 @@ const fadeInUp = {
 }
 
 export default function Franchising() {
-  const { t } = useLanguage()
+  const context = useLanguage()
+  if (!context) {
+    return <div>Language context not available</div>
+  }
+  const { t } = context
 
   return (
     <div className="min-h-screen pt-20">

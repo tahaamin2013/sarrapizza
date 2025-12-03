@@ -5,7 +5,11 @@ import { motion } from "framer-motion"
 import { Play } from "lucide-react"
 
 export default function Tour() {
-  const { t } = useLanguage()
+  const context = useLanguage()
+  if (!context) {
+    return <div>Language context not available</div>
+  }
+  const { t } = context
 
   return (
     <div className="min-h-screen pt-20">

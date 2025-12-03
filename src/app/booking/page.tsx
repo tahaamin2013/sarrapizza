@@ -8,7 +8,11 @@ import { Calendar, Users, Clock, MapPin, Mail, Phone } from "lucide-react"
 import { useState } from "react"
 
 export default function Booking() {
-  const { t } = useLanguage()
+  const context = useLanguage()
+  if (!context) {
+    return <div>Language context not available</div>
+  }
+  const { t } = context
   const [formData, setFormData] = useState({
     name: "",
     email: "",
