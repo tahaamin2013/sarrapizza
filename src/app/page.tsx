@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen pt-20">
-      <section className="relative h-screen md:h-[90vh] overflow-hidden flex items-center justify-center">
+      <section className="relative h-screen md:h-[120vh] overflow-hidden flex items-center justify-center">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
           <video autoPlay muted loop playsInline className="w-full h-full object-cover">
