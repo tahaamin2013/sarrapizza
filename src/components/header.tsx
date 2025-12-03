@@ -30,7 +30,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
-          <div className="text-2xl font-display font-bold text-foreground hover:text-accent smooth-transition">
+          <div className="text-2xl font-display font-bold  hover:text-accent smooth-transition">
             SARA
           </div>
         </Link>
